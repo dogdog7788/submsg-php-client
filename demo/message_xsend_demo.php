@@ -1,8 +1,8 @@
 <?PHP
     /*
-     | Submail message/xsend API demo
-     | SUBMAIL SDK Version 2.3 --PHP
-     | copyright 2011 - 2016 SUBMAIL
+     | Submsg message/xsend API demo
+     | SUBMSG SDK Version 2.3 --PHP
+     | copyright 2011 - 2016 SUBMSG
      |--------------------------------------------------------------------------
      */
     
@@ -13,18 +13,18 @@
     require '../app_config.php';
     
     /*
-     |载入 SUBMAILAutoload 文件
+     |载入 SUBMSGAutoload 文件
      |--------------------------------------------------------------------------
      */
     
-    require_once('../SUBMAILAutoload.php');
+    require_once('../SUBMSGAutoload.php');
     
     /*
      |初始化 MESSAGEXsend 类
      |--------------------------------------------------------------------------
      */
     
-    $submail=new MESSAGEXsend($message_configs);
+    $submsg=new MESSAGEXsend($message_configs);
     
     /*
      |必选参数
@@ -33,7 +33,7 @@
      |--------------------------------------------------------------------------
      */
     
-    $submail->setTo('15*********');
+    $submsg->setTo('159********');
     
     /*
      |必选参数
@@ -42,7 +42,7 @@
      |--------------------------------------------------------------------------
      */
     
-    $submail->SetProject('xxxxx');
+    $submsg->SetTempid('KIJD9K');
     
     /*
      |可选参数
@@ -51,15 +51,13 @@
      |可多次调用
      |--------------------------------------------------------------------------
      */
-    
-    $submail->AddVar('code','198277');
-    
+    $submsg->AddVar('code','198278');
     /*
      |调用 xsend 方法发送短信
      |--------------------------------------------------------------------------
      */
     
-    $xsend=$submail->xsend();
+    $xsend=$submsg->xsend();
     
     
     /*
@@ -68,3 +66,4 @@
      */
     
     print_r($xsend);
+

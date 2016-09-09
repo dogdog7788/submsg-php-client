@@ -1,16 +1,16 @@
 {
-  "name": "submail/submail-php",
-  "description": "submail sdk.",
+  "name": "submail/submsg-php",
+  "description": "submsg sdk.",
   "type": "project",
-  "keywords": ["submail"],
-  "homepage": "http://submail.cn",
+  "keywords": ["submsg"],
+  "homepage": "http://submsg.cn",
   "license": "MIT",
   "authors": [{
-    "name": "submail",
-    "email": "service@submail.cn"
+    "name": "submsg",
+    "email": "service@submsg.cn"
   }],
   "autoload": {
-    "files": ["SUBMAILAutoload.php"]
+    "files": ["SUBMSGAutoload.php"]
   },
   "require": {
     "php": ">=5.3"
